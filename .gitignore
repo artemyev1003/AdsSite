@@ -1,0 +1,8 @@
+/venv/
+/mysite/db.sqlite3
+/.idea/
+/mysite/mysite/.env
+/mysite/ads/__pycache__/
+/mysite/mysite/__pycache__/
+/mysite/ads/templatetags/__pycache__/
+/mysite/ads/migrations/__pycache__/

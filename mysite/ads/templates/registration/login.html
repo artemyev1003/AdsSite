@@ -1,0 +1,18 @@
+<head>
+  <title>Ads login page</title>
+</head>
+{% extends "ads/base_bootstrap.html" %}
+
+{% block content %}
+
+{% if form.errors %}
+  <p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+<br/>
+<form method="post" action="{% url 'login' %}">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" class="btn btn-primary" value="Login" />
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
+{% endblock %}
